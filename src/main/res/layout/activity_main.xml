@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.example.junweiliu.printertextview.MainActivity">
+
+    <!--android:text="某日,女秘书神色凝重地说：王总,我怀孕了。 王继续低头看文件,然后淡淡一笑:我早结扎了。 女秘书楞了一会媚笑道:我和您开玩笑呢! 王抬起头看了她一眼，喝了口茶说:我也是。"-->
+    <com.example.junweiliu.printertextview.PrinterTextView
+            android:id="@+id/pt_my"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#999999"
+            android:textSize="15sp"
+    />
+    <Button
+            android:id="@+id/btn_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="16dp"
+            android:onClick="startPrint"
+            android:text="开始"
+    />
+</RelativeLayout>
